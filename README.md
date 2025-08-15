@@ -25,11 +25,11 @@ It only includes a stub file (AI generated from the help(winkerberos) command) w
 
 ### Before types:
 
-<img src="./images/before.png"  alt="before types" title="before"/>
+<img src="https://raw.githubusercontent.com/DroidZed/winkerberos-typed/refs/heads/main/images/before.png"  alt="before types" title="before"/>
 
 ### After types:
 
-<img src="./images/after.png"  alt="after types" title="after"/>
+<img src="https://raw.githubusercontent.com/DroidZed/winkerberos-typed/refs/heads/main/images/after.png"  alt="after types" title="after"/>
 
 ## Installation:
 
@@ -57,3 +57,4 @@ poetry add winkerberos-typed
 ## License:
 
 This project is licensed under the MIT license.
+
