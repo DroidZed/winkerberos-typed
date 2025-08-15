@@ -1,0 +1,7 @@
+[project]
+name = "winkerberos-typed"
+version = "0.1.0"
+description = "Stubs file for winkerberos package"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
