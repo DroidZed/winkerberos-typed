@@ -1,9 +1,12 @@
 # Winkerberos typed
 
+This package aims to make the SSO library [`winkerberos`](https://github.com/mongodb/winkerberos) more pythonic and user friendly.
+
+It only includes a stub file (AI generated from the help(winkerberos) command) which improves the devloper experience.
+
 ## Table of Contents
 
 <ul>
-  <li><a href="#intro">Intro</a></li>
   <li>
     <a href="#comparison">Comparison</a>
     <ul>
@@ -12,14 +15,9 @@
     </ul>
   </li>
   <li><a href="#installation">Installation</a></li>
+  <li><a href="#build">Build</a></li>
   <li><a href="#license">License</a></li>
 </ul>
-
-## Intro
-
-This package aims to make the SSO library [`winkerberos`](https://github.com/mongodb/winkerberos) more pythonic and user friendly.
-
-It only includes a stub file (AI generated from the help(winkerberos) command) which improves the devloper experience.
 
 ## Comparison
 
@@ -54,7 +52,17 @@ poetry add winkerberos-typed
 
 ```
 
+## Build
+
+To build the project, clone it with git and install `uv` by following [this link](https://docs.astral.sh/uv/getting-started/installation/).
+
+Then:
+
+```sh
+git clone https://github.com/DroidZed/winkerberos-typed && cd winkerberos-typed
+uv build
+```
+
 ## License:
 
 This project is licensed under the MIT license.
-
