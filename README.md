@@ -56,17 +56,20 @@ poetry add winkerberos-typed
 
 ## Build
 
-To build the project, clone it with git and install `uv` by following [this link](https://docs.astral.sh/uv/getting-started/installation/).
+1. Install `uv` by following [this link](https://docs.astral.sh/uv/getting-started/installation/).
 
-Then:
+2. Clone the project:
 
-```sh
-git clone https://github.com/DroidZed/winkerberos-typed && cd winkerberos-typed
-uv build
-```
+    ```sh
+    git clone https://github.com/DroidZed/winkerberos-typed && cd winkerberos-typed
+    ```
+
+4. Build with `uv`:
+
+    ```sh
+    uv build
+    ```
 
 ## License:
 
 This project is licensed under the MIT license.
-
-
