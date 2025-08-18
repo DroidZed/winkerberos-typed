@@ -4,7 +4,7 @@ This package aims to make the SSO library [`winkerberos`](https://github.com/mon
 
 It only includes a stub file (AI generated from the help(winkerberos) command) which improves the devloper experience.
 
-PS: This alone won't do anything on its own. You need the [original](https://github.com/mongodb/winkerberos/) for the full experience.
+PS: This package won't do anything on its own. You need the [original](https://github.com/mongodb/winkerberos/) for the full experience.
 
 ## Table of Contents
 
@@ -68,4 +68,5 @@ uv build
 ## License:
 
 This project is licensed under the MIT license.
+
 
