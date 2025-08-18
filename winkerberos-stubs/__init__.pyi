@@ -4,7 +4,7 @@ Type stubs for winkerberos
 A native Kerberos SSPI client implementation.
 """
 
-from typing import Optional, Tuple, Union, Any
+from typing import Any
 
 __version__: str
 
@@ -35,13 +35,13 @@ class GSSError(KrbError):
 # Client functions
 def authGSSClientInit(
     service: str,
-    principal: Optional[str] = None,
+    principal: str | None = None,
     gssflags: int = GSS_C_MUTUAL_FLAG | GSS_C_SEQUENCE_FLAG,
-    user: Optional[str] = None,
-    domain: Optional[str] = None,
-    password: Optional[Union[str, bytes]] = None,
+    user: str | None = None,
+    domain: str | None = None,
+    password: str | bytes | None = None,
     mech_oid: Any = GSS_MECH_OID_KRB5,
-) -> Tuple[int, Any]:
+) -> tuple[int, Any]:
     """
     Initializes a context for Kerberos SSPI client side authentication with
     the given service principal.
@@ -124,7 +124,7 @@ def authGSSClientUserName(context: Any) -> str:
     ...
 
 def authGSSClientWrap(
-    context: Any, data: str, user: Optional[str] = None, protect: int = 0
+    context: Any, data: str, user: str | None = None, protect: int = 0
 ) -> int:
     """
     Execute the client side EncryptMessage (GSSAPI Wrap) operation.
@@ -173,7 +173,7 @@ def authGSSClientClean(context: Any) -> int:
     ...
 
 # Server functions
-def authGSSServerInit(service: str) -> Tuple[int, Any]:
+def authGSSServerInit(service: str) -> tuple[int, Any]:
     """
     Initializes a context for Kerberos SSPI server side authentication with
     the given service principal.
@@ -245,10 +245,10 @@ def authGSSServerClean(context: Any) -> int:
 # Channel bindings function
 def channelBindings(
     initiator_addrtype: int = GSS_C_AF_UNSPEC,
-    initiator_address: Optional[bytes] = None,
+    initiator_address: bytes | None = None,
     acceptor_addrtype: int = GSS_C_AF_UNSPEC,
-    acceptor_address: Optional[bytes] = None,
-    application_data: Optional[bytes] = None,
+    acceptor_address: bytes | None = None,
+    application_data: bytes | None = None,
 ) -> Any:
     """
     Builds a SecPkgContext_Bindings struct and returns an opaque pointer to
